@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloprimitiva.css">
+
+    <script> 
+
+        var contador = 0
+
+        var Arraynumeros = new Array (50)
+            Arraynumeros [0] = 0
+            
+
+        for (i=1 ; i <= 50 ; i++){
+            Arraynumeros[i] = 0
+        } 
+
+        function cambiarColor(boton){
+            if (Arraynumeros[boton] == 0 && contador < 6 ){
+                contador ++
+                document.getElementById('boton_' + boton).style.background = 'green'
+                document.getElementById('boton_' + boton).style.color = 'white'
+                Arraynumeros[boton] = boton
+            } else if (Arraynumeros[boton]!=0 && contador > 0){
+                contador-- 
+                document.getElementById('boton_' + boton ).style.background = 'white'
+                document.getElementById('boton_' + boton ).style.color = 'green'
+                Arraynumeros[boton] = 0
+            }           
+
+            console.log(Arraynumeros)
+            console.log(contador)                   
+        } // Funcion
+        
+
+
+        var contador2 = 0
+        var ArraynumerosR = new Array (10)
+            ArraynumerosR[0] = 20
+
+        for (y=1 ; y <= 10 ; y++){
+            ArraynumerosR[y] = 20
+        } 
+
+        function cambiarColorR(numeroR){
+            if(ArraynumerosR[numeroR] == 20 && contador2 < 1){
+                contador2++
+                document.getElementById('botonR_' + numeroR).style.background = 'green'
+                document.getElementById('botonR_' + numeroR).style.color = 'white'
+                ArraynumerosR[numeroR] = numeroR
+
+            } else if (ArraynumerosR[numeroR] != 20 && contador2 > 0){
+                contador2-- 
+                document.getElementById('botonR_' + numeroR).style.background = 'white'
+                document.getElementById('botonR_' + numeroR).style.color = 'green'
+                ArraynumerosR[numeroR] = 20
+            }
+
+            console.log(ArraynumerosR)
+            console.log(contador2)       
+        } // Funcion
+
+    
+        function apostar(){
+            var cadena = ""
+            for (i=1 ; i <= 50 ; i++){
+                if (Arraynumeros[i] != 0) {
+                    cadena = cadena + Arraynumeros[i] + ", "
+                }
+            } 
+
+            for (y=1 ; y <= 10 ; y++ ){
+                if (ArraynumerosR [y] != 20){
+                    alert('Los números seleccionados son : ' + cadena.slice(0,-2) + '. Su reintegro es el '+ 
+                    ArraynumerosR[y] + '. Gracias por jugar con nosotros.');
+                }
+            }
+            
+            
+           
+              
+        } // Funcion
+
+   
+        function resetear(){
+            for (i=1 ; i<50 ; i++){
+                document.getElementById('boton_' + i).style.background = 'white'
+                document.getElementById('boton_' + i).style.color = 'green'
+            }
+            for (y=1 ; y < 10 ; y++){
+                document.getElementById('botonR_' + y).style.background = 'white'
+                document.getElementById('botonR_' + y).style.color = 'green'
+            }
+        }
+      
+
+     
+
+        function aleatorio(){
+            
+            resetear();
+            numeros = new Array();       
+            var cadena2 = ""   
+            var cantidadNumeros = 6;
+            var myArray = []
+            contador = 6
+            contador2 = 1
+
+            while(myArray.length < cantidadNumeros ){
+                var numeroAleatorio = Math.ceil(Math.random()*49);
+                var existe = false;
+                for(var i=0;i<myArray.length;i++){
+                    if(myArray [i] == numeroAleatorio){
+                        existe = true;
+                        break;
+                    }
+                }
+                if(!existe){
+                    myArray[myArray.length] = numeroAleatorio;
+                    cadena2 = cadena2 + myArray[i] + ", " 
+                }
+                
+
+            }
+                                   
+            var aleatorio = Math.round(Math.random()*9); 
+            
+              
+            alert('Sus números aleatorios son : ' + cadena2.slice(0,-2) + '. Y su reintegro aleatorio es el ' + 
+            aleatorio + '. Gracias por jugar con nosotros.');    
+            
+
+
+                document.getElementById('botonR_' + aleatorio).style.background = 'green' 
+                document.getElementById('botonR_' + aleatorio).style.color = 'white'  
+
+                document.getElementById('boton_' + myArray[0]).style.background = 'green'
+                document.getElementById('boton_' + myArray[0]).style.color = 'white'   
+
+                document.getElementById('boton_' + myArray[1]).style.background = 'green'
+                document.getElementById('boton_' + myArray[1]).style.color = 'white'      
+
+                document.getElementById('boton_' + myArray[2]).style.background = 'green'
+                document.getElementById('boton_' + myArray[2]).style.color = 'white'   
+
+                document.getElementById('boton_' + myArray[3]).style.background = 'green'
+                document.getElementById('boton_' + myArray[3]).style.color = 'white' 
+
+                document.getElementById('boton_' + myArray[4]).style.background = 'green'
+                document.getElementById('boton_' + myArray[4]).style.color = 'white'   
+
+                document.getElementById('boton_' + myArray[5]).style.background = 'green'
+                document.getElementById('boton_' + myArray[5]).style.color = 'white'   
+            
+              
+                                                        
+        } //Funcion
+
+    
+    
+    </script>
+</head>
+<body>
+    
+    <center> <img src="logo.png" width="216px" height="102px">
+    <br><br> <hr>
+   
+    <p> Apuesta sencilla </p>
+    <div class="TablaPrincipal">
+        <table class="prueba"> 
+            <tr>
+                <td> &nbsp; </td>
+				<td ><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_10" value="10">10</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_20" value="20">20</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_30" value="30">30</button></td>
+				<td><button onclick="cambiarColor(this.value)" class="botonBoleto" name="botonBoleto" id="boton_40" value="40">40</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_1" value="1">1</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_11" value="11">11</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_21" value="21">21</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_31" value="31">31</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_41" value="41">41</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_2" value="2">2</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_12" value="12">12</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_22" value="22">22</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_32" value="32">32</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_42" value="42">42</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_3" value="3">3</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_13" value="13">13</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_23" value="23">23</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_33" value="33">33</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_43" value="43">43</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_4" value="4">4</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_14" value="14">14</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_24" value="24">24</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_34" value="34">34</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_44" value="44">44</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_5" value="5">5</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_15" value="15">15</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_25" value="25">25</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_35" value="35">35</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_45" value="45">45</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_6" value="6">6</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_16" value="16">16</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_26" value="26">26</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_36" value="36">36</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_46" value="46">46</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_7" value="7">7</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_17" value="17">17</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_27" value="27">27</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_37" value="37">37</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_47" value="47">47</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_8" value="8">8</button></td>
+				<td><button onclick="cambiarColor(this.value)" class="botonBoleto" name="botonBoleto" id="boton_18" value="18">18</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_28" value="28">28</button></td>
+				<td><button onclick="cambiarColor(this.value)" class="botonBoleto" name="botonBoleto" id="boton_38" value="38">38</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_48" value="48">48</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_9" value="9">9</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_19" value="19">19</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_29" value="29">29</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_39" value="39">39</button></td>
+				<td><button onclick="cambiarColor(this.value)"  class="botonBoleto" name="botonBoleto" id="boton_49" value="49">49</button></td>
+            </tr>
+        </table> 
+            
+            <p> Reintegro </p> 
+
+            <table>
+            </tr>
+            <tr>
+                <td><button onclick="cambiarColorR(this.value)"  class="botonBoleto" name="botonR" id="botonR_0" value="0">0</button></td>
+				<td><button onclick="cambiarColorR(this.value)"  class="botonBoleto" name="botonR" id="botonR_1" value="1">1</button></td>
+				<td><button onclick="cambiarColorR(this.value)"  class="botonBoleto" name="botonR" id="botonR_2" value="2">2</button></td>
+				<td><button onclick="cambiarColorR(this.value)"  class="botonBoleto" name="botonR" id="botonR_3" value="3">3</button></td>
+				<td><button onclick="cambiarColorR(this.value)"  class="botonBoleto" name="botonR" id="botonR_4" value="4">4</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cambiarColorR(this.value)"  class="botonBoleto" name="botonR" id="botonR_5" value="5">5</button></td>
+				<td><button onclick="cambiarColorR(this.value)"  class="botonBoleto" name="botonR" id="botonR_6" value="6">6</button></td>
+				<td><button onclick="cambiarColorR(this.value)"  class="botonBoleto" name="botonR" id="botonR_7" value="7">7</button></td>
+				<td><button onclick="cambiarColorR(this.value)"  class="botonBoleto" name="botonR" id="botonR_8" value="8">8</button></td>
+				<td><button onclick="cambiarColorR(this.value)"  class="botonBoleto" name="botonR" id="botonR_9" value="9">9</button></td>
+            </tr>
+
+        </table>
+
+        <br><br>
+      
+         
+        <button onclick='apostar()' class="botones"> Apostar </button>          
+        <button onclick="aleatorio()" class="botones"> Nº Aleatorios </button>
+        <form> <button onreset class="botones"> Borrar </button> </form>
+        </center>
+
+        
+    </div>
+
+
+</body>
+</html>
