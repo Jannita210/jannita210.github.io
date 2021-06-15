@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo Switch by: Paloma</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script>
+
+        var miArray = new Array (9)
+                    miArray[0] = "videos/Bayonetta2.mp4" 
+                    miArray[1] = "videos/OT.mp4"
+                    miArray[2] = "videos/Wargroove.mp4"
+                    miArray[3] = "videos/PKMN.mp4"
+                    miArray[4] = "videos/SMO.mp4"
+                    miArray[5] = "videos/TLOZ.mp4"
+                    miArray[6] = "videos/ACNH.mp4"
+                    miArray[7] = "videos/HW.mp4"
+                    miArray[8] = "videos/MH.mp4"
+                   
+
+        function dosJugadores(){
+            document.getElementById('mandosSeparados').style.display ='block';
+            document.getElementById('mandosPortatil').style.display = 'none';
+            document.getElementById('mandoMando').style.display = 'none';
+        }
+
+        function porDefecto(){
+            if(document.getElementById('mandosSeparados').style.display = 'block'){
+                document.getElementById('mandosSeparados').style.display = 'none';
+                document.getElementById('mandosPortatil').style.display = 'block';
+                document.getElementById('mandoMando').style.display = 'none';
+
+            }
+        }
+
+        function mando(){
+            document.getElementById('mandoMando').style.display = 'block';
+            document.getElementById('mandosPortatil').style.display = 'none';
+            document.getElementById('mandosSeparados').style.display = 'none';
+        }
+
+
+
+        function house(){
+            var elemento = document.getElementById('video');
+            if(!elemento) {
+                return true;
+            }
+            if (elemento.style.display == "none") {
+                var cont ;
+                cont = Math.floor((Math.random() * miArray.length) ) ;
+                document.getElementById('video').innerHTML = '<video width="535px" autoplay height="302px" height src=\"' + miArray[cont] + '\">' 
+                document.getElementById('imagen').style.display = 'none'
+                elemento.style.display = "block"
+                elemento.autoplay = true;
+                elemento.load();
+            } else {
+                elemento.style.display = "none";
+                document.getElementById('video').innerHTML= ""
+                elemento.autoplay = false;
+                elemento.load();
+            };
+                return true;
+            
+            
+        }
+
+
+        function mostrarOcultar(){
+            var elemento2 = document.getElementById('imagen');
+                if(!elemento2) {
+                return true;
+            }
+                if (elemento2.style.display == "none") {
+                elemento2.style.display = "block"
+                document.getElementById('video').style.display = 'none'
+                document.getElementById('video').innerHTML= ""
+            } else {
+                elemento2.style.display = "none"
+            };
+                return true;
+            };
+
+
+        function encendidoBotonesDerecha(){
+            setTimeout('CambiarColor1()',400);
+            setTimeout('CambiarColor2()',800);
+            setTimeout('CambiarColor3()',1200);
+            setTimeout('CambiarColor4()',1600);
+            setTimeout('CambiarColor3()',2000);
+            setTimeout('CambiarColor2()',2400);
+            setTimeout('CambiarColor1()',2800);
+            setTimeout('CambiarColor2()',3200);
+            setTimeout('CambiarColor3()',3600);
+            setTimeout('CambiarColor4()',4000);
+
+            setTimeout('VolverColor1()',600);
+            setTimeout('VolverColor2()',1000);
+            setTimeout('VolverColor3()',1400);
+            setTimeout('VolverColor4()',1800);
+            setTimeout('VolverColor3()',2200);
+            setTimeout('VolverColor2()',2600);
+            setTimeout('VolverColor1()',3000);
+            setTimeout('VolverColor2()',3400);
+            setTimeout('VolverColor3()',3800);
+            setTimeout('VolverColor4()',4200);
+
+
+
+            setTimeout('CambiarColor1()',4800);
+            setTimeout('VolverColor1()',10000);
+
+        }
+
+
+        function CambiarColor1(){
+            document.getElementById('bd1').style.backgroundColor = 'green'
+        }
+        
+        function CambiarColor2(){
+            document.getElementById('bd2').style.backgroundColor = 'green'
+        }
+
+        function CambiarColor3(){
+            document.getElementById('bd3').style.backgroundColor = 'green'
+        }
+        
+        function CambiarColor4(){
+            document.getElementById('bd4').style.backgroundColor = 'green'
+        }
+
+
+
+
+        function VolverColor1(){
+            document.getElementById('bd1').style.backgroundColor = 'black'
+        }
+
+        function VolverColor2(){
+            document.getElementById('bd2').style.backgroundColor = 'black'
+        }
+
+        function VolverColor3(){
+            document.getElementById('bd3').style.backgroundColor = 'black'
+        }
+
+        function VolverColor4(){
+            document.getElementById('bd4').style.backgroundColor = 'black'
+        }
+
+
+        function encendidoBotonesIzquierdo(){
+            setTimeout('CambiarColor11()',400);
+            setTimeout('CambiarColor22()',800);
+            setTimeout('CambiarColor33()',1200);
+            setTimeout('CambiarColor44()',1600);
+            setTimeout('CambiarColor33()',2000);
+            setTimeout('CambiarColor22()',2400);
+            setTimeout('CambiarColor11()',2800);
+            setTimeout('CambiarColor22()',3200);
+            setTimeout('CambiarColor33()',3600);
+            setTimeout('CambiarColor44()',4000);
+
+            setTimeout('VolverColor11()',600);
+            setTimeout('VolverColor22()',1000);
+            setTimeout('VolverColor33()',1400);
+            setTimeout('VolverColor44()',1800);
+            setTimeout('VolverColor33()',2200);
+            setTimeout('VolverColor22()',2600);
+            setTimeout('VolverColor11()',3000);
+            setTimeout('VolverColor22()',3400);
+            setTimeout('VolverColor33()',3800);
+            setTimeout('VolverColor44()',4200);
+
+
+
+            setTimeout('CambiarColor11()',4800);
+            setTimeout('VolverColor11()',10000);
+        }
+
+        function CambiarColor11(){
+            document.getElementById('bi1').style.backgroundColor = 'green'
+        }
+        
+        function CambiarColor22(){
+            document.getElementById('bi2').style.backgroundColor = 'green'
+        }
+
+        function CambiarColor33(){
+            document.getElementById('bi3').style.backgroundColor = 'green'
+        }
+        
+        function CambiarColor44(){
+            document.getElementById('bi4').style.backgroundColor = 'green'
+        }
+
+
+        function VolverColor11(){
+            document.getElementById('bi1').style.backgroundColor = 'black'
+        }
+
+        function VolverColor22(){
+            document.getElementById('bi2').style.backgroundColor = 'black'
+        }
+
+        function VolverColor33(){
+            document.getElementById('bi3').style.backgroundColor = 'black'
+        }
+
+        function VolverColor44(){
+            document.getElementById('bi4').style.backgroundColor = 'black'
+        }
+
+    </script>
+</head>
+<body>
+    <center>
+        <button onclick="dosJugadores()"> Dos jugadores </button>
+        <button onclick="mando()"> Mando </button>
+        <button onclick="porDefecto()"> Modo una persona </button>
+    </center>
+
+    
+    
+    <!------------------------------------------------------------------------------------------- CONSOLA PRINCIPAL ---------------------------------------------------------------------------------------------------->
+    <div class="principal"></div> <!---- Gris principal ---->
+
+        <div class="arregloIzquierdoPortatil"></div> <!---- Gris izquierdo pequeño ---->
+        <div class="arregloDerechoPortatil"></div> <!---- Gris derecho pequeño ---->
+
+        <div class="bordePantalla"></div> <!---- Borde pantalla ---->
+            <div class="pantalla"></div> <!---- Pantalla ---->
+
+        <div class='video' id="video" style="display: none;"></div>
+        <img class="imagen"  id='imagen' src="created.png" style="display: none;" >
+
+
+        <!------------ MANDO IZQUIERDO (AZUL) PORTATIL -------------->
+
+        <div id="mandosPortatil" style= "display: block"> <!-- ////////////////////////-->
+
+                <div class="izquierdo"></div> <!---- Mando izquierdo (azul) ---->
+                    <div class="izquierdoLuz"></div> <!---- Luz mando izquierdo ---->
+                <div class="gatilloIzquierdo"></div> <!---- Gatillo mando izquierdo ---->
+
+                    <!-------JOYSTICK IZQUIERDO------->
+                    <div class="joystickIzquierdo"></div> <!---- Base joystick azul portatil ---->
+                        <div class="joystickIzquierdoPequeño"></div> <!---- Círculo pequeño ---->
+                        <div class="joystickIzquierdoTop"></div> <!---- Tira de arriba ---->
+                        <div class="joystickIzquierdoBot"></div> <!---- Tira de abajo ---->
+                        <div class="joystickIzquierdoIzq"></div> <!---- Tira izquierda ---->
+                        <div class="joystickIzquierdoDerecho"></div> <!---- Tira derecha ---->
+
+                    <!-------BOTONES IZQUIERDO-------->
+                    <div class="botonTopIzq"></div>
+                        <div class="trianguloTop"></div>
+
+                    <div class="botonBotIzq"></div>                
+                        <div class="trianguloBot"></div>
+
+                    <div class="botonIzquierdoIzq"></div>
+                        <div class="trianguloIzquierda"></div>
+
+                    <div class="botonDerechoIzq"></div>
+                        <div class="trianguloDerecha"></div>
+
+                    <!----------BOTON SUSPENSION---------->
+                    <div onclick="mostrarOcultar()" style="cursor: pointer;">
+                        <div class="botonSuspensionCuadrado"></div>
+                        <div class="botonSuspensionCirculoFuera"></div>
+                    </div>
+
+                    <!-------------BOTON MENOS------------>
+                    <div class="botonMenos"></div>
+
+            <!------------- MANDO DERECHO (ROJO) PORTATIL  ----------------->
+
+                <div class="derecho"></div> <!---- Mando derecho (rojo) ---->
+                <div class="gatilloDerecho"></div> <!---- Gatillo mando derecho ---->
+
+
+                    <!------------- JOYSTICK DERECHO------------->
+                    <div class="joystickDerecho"></div>
+                        <div class="joystickDerechoPequeño"></div>
+                        <div class="joystickDerechoTop"></div>
+                        <div class="joystickDerechoBot"></div>
+                        <div class="joystickDerechoIzq"></div>
+                        <div class="joystickDerechoDerecho"></div>
+
+
+                    <!---------------BOTONES DERECHOS------------>
+                    <div class="botonTopDerecho"></div>
+                        <p class="botonTopDerechoLetra">X</p>
+
+                    <div class="botonBotDerecho"></div>
+                        <p class="botonBotDerechoLetra">B</p>
+
+                    <div class="botonIzquierdoDerecho"></div>
+                        <p class="botonIzquierdoDerechoLetra">Y</p>
+
+                    <div class="botonDerechoDerecho"></div>
+                        <p class="botonDerechoDerechoLetra">A</p>
+
+                    <!------------BOTON HOME---------------->
+
+                    <div class="botonVideo" onclick="house()" style="cursor: pointer">
+                        <div class="botonBaseCasa"></div>
+                            <div class="botonBaseCasaNegro"></div>
+                            <div class="cuadradoCasa"></div>
+                            <div class="trianguloCasa"></div>
+                            <div class="miniCuadradoCasa"></div>
+                    </div>
+                    <!-------------BOTON MÁS------------->
+                    <div class="botonMasHor"></div>
+                    <div class="botonMasVert"></div>
+
+
+    
+
+    </div> <!---------------------------- FIN DIV MANDOSPORTATIL ------------------------------>
+
+    <!------------------------------------------------------------------------------------------ MANDOS SEPARADOS ------------------------------------------------------------------------------------------->
+
+    <div  id="mandosSeparados" style=  "display: none;"> <!-- ////////////////////////-->
+
+        <!-- MANDO IZQUIERDO SEPARADO -->
+        <div class="izquierdoSep"> </div>
+            <div class="negroIzquierdaSep"></div>
+            <div class="izquierdoSepLuz"></div>
+            <div class="negroIzquierdaSepLuz"></div>
+                <div class="gatilloIzquierdoAzulNegro"></div>
+                <div class="gatilloDerechoAzulNegro"></div>
+                <div class="plaquitaBlancaAzul"></div>
+
+            <div class="gatilloIzquierdoSep"></div>
+            <div class="botonMenosGatilloNegroAzul"></div>
+
+                <!--JOYSTICK IZQUIERDO-->
+                <div class="joystickIzquierdoSep"></div>
+                    <div class="joystickIzquierdoPequeñoSep"></div>
+                    <div class="joystickIzquierdoTopSep"></div>
+                    <div class="joystickIzquierdoBotSep"></div>
+                    <div class="joystickIzquierdoIzqSep"></div>
+                    <div class="joystickIzquierdoDerechoSep"></div>
+
+                <!--BOTONES IZQUIERDO-->
+                <div class="botonTopIzqSep"></div>
+                    <div class="trianguloTopSep"></div>
+
+                <div class="botonBotIzqSep"></div>                
+                    <div class="trianguloBotSep"></div>
+
+                <div class="botonIzquierdoIzqSep"></div>
+                    <div class="trianguloIzquierdaSep"></div>
+
+                <div class="botonDerechoIzqSep"></div>
+                    <div class="trianguloDerechaSep"></div>
+
+                <!--BOTON SUSPENSION-->
+                <div onclick="mostrarOcultar()" style="cursor: pointer;">
+                    <div class="botonSuspensionCuadradoSep"></div>
+                    <div class="botonSuspensionCirculoFueraSep"></div>
+                </div>
+
+                <!--BOTON MENOS-->
+                <div class="botonMenosSep"></div>
+
+
+        <!-----------MANDO DERECHO SEPARADO--------->
+
+        <div class="derechoSep">       </div>
+            <div class="negroDerechaSep"></div>
+            <div class="DerechaSepLuz"></div>
+            <div class="negroDerechaSepLuz"></div>
+                <div class="gatilloIzquierdoRojoNegro"></div>
+                <div class="gatilloDerechoRojoNegro"></div>
+                <div class="plaquitaBlancaRojo"></div>
+
+                <div class="botonMasGatilloNegroRojoHor"></div>
+                <div class="botonMasGatilloNegroRojoVer"></div>
+
+                <div class="gatilloDerechoSep"></div> <!---- Gatillo mando derecho ---->
+
+
+                <!------------- JOYSTICK DERECHO------------->
+                <div class="joystickDerechoSep"></div>
+                    <div class="joystickDerechoPequeñoSep"></div>
+                    <div class="joystickDerechoTopSep"></div>
+                    <div class="joystickDerechoBotSep"></div>
+                    <div class="joystickDerechoIzqSep"></div>
+                    <div class="joystickDerechoDerechoSep"></div>
+
+
+                <!---------------BOTONES DERECHOS------------>
+                <div class="botonTopDerechoSep"></div>
+                    <p class="botonTopDerechoLetraSep">Y</p>
+
+                <div class="botonBotDerechoSep"></div>
+                    <p class="botonBotDerechoLetraSep">A</p>
+
+                <div class="botonIzquierdoDerechoSep"></div>
+                    <p class="botonIzquierdoDerechoLetraSep">B</p>
+
+                <div class="botonDerechoDerechoSep"></div>
+                    <p class="botonDerechoDerechoLetraSep">X</p>
+
+                <!------------BOTON HOME---------------->
+
+                <div class="botonVideo" onclick="house()" style="cursor: pointer">
+                    <div class="botonBaseCasaSep"></div>
+                        <div class="botonBaseCasaNegroSep"></div>
+                        <div class="cuadradoCasaSep"></div>
+                        <div class="trianguloCasaSep"></div>
+                        <div class="miniCuadradoCasaSep"></div>
+                </div>
+                <!-------------BOTON MÁS------------->
+                <div class="botonMasHorSep"></div>
+                <div class="botonMasVertSep"></div>
+    
+
+
+
+
+
+
+    </div> <!------------------- FIN DIV MANDOS SEPARADOS ------------------------------>
+
+
+
+
+    <!------------------------------------------------------------------------------------------------------ MANDOS JUNTOS ---------------------------------------------------------------------------------------->
+
+    <div id="mandoMando" style= "display: none;"> <!-- ////////////////////////-->
+
+        <!---------------------------- MANDO IZQUIERDO MANDO ------------------------------------>
+        <div class="izquierdoMando"></div>
+            <div class="izquierdoLuzJuntos"></div> <!---- Luz mando izquierdo JUNTOS ---->
+        <div class="gatilloIzquierdoMando"></div>
+
+                <!--JOYSTICK IZQUIERDO-->
+                <div class="joystickIzquierdoMando"></div>
+                    <div class="joystickIzquierdoPequeñoMando"></div>
+                    <div class="joystickIzquierdoTopMando"></div>
+                    <div class="joystickIzquierdoBotMando"></div>
+                    <div class="joystickIzquierdoIzqMando"></div>
+                    <div class="joystickIzquierdoDerechoMando"></div>
+
+                <!--BOTONES IZQUIERDO-->
+
+                <div class="botonesIzquierdosMando" onclick="encendidoBotonesIzquierdo()" style="cursor: pointer;">
+                    <div class="botonTopIzqMando"></div>
+                        <div class="trianguloTopMando"></div>
+
+                    <div class="botonBotIzqMando"></div>                
+                        <div class="trianguloBotMando"></div>
+
+                    <div class="botonIzquierdoIzqMando"></div>
+                        <div class="trianguloIzquierdaMando"></div>
+
+                    <div class="botonDerechoIzqMando"></div>
+                        <div class="trianguloDerechaMando"></div>
+                </div>
+
+                <!--BOTON SUSPENSION-->
+                <div onclick="mostrarOcultar()" style="cursor: pointer;">
+                    <div class="botonSuspensionCuadradoMando"></div>
+                    <div class="botonSuspensionCirculoFueraMando"></div>
+                </div>
+
+                <!--BOTON MENOS-->
+                <div class="botonMenosMando"></div>
+
+
+
+            <!--BASE NEGRA MANDO IZQUIERDO-->
+                <div class="baseIzquierdaMando"></div>
+
+        <!-- MANDO DERECHO MANDO-->
+        <div class="derechoMando"></div>
+
+
+
+        <!----------------------------- MANDO DERECHO MANDO --------------------------------------------->
+
+        <div class="gatilloDerechoMando"></div>
+
+
+        <!-- JOYSTICK DERECHO-->
+        <div class="joystickDerechoMando"></div>
+            <div class="joystickDerechoPequeñoMando"></div>
+            <div class="joystickDerechoTopMando"></div>
+            <div class="joystickDerechoBotMando"></div>
+            <div class="joystickDerechoIzqMando"></div>
+            <div class="joystickDerechoDerechoMando"></div>
+
+
+        <!--BOTONES DERECHOS-->
+        <div class="botonesDerechosMando"  onclick="encendidoBotonesDerecha()" style="cursor: pointer;">
+            <div class="botonTopDerechoMando"></div>
+                <p class="botonTopDerechoLetraMando">X</p>
+
+            <div class="botonBotDerechoMando"></div>
+                <p class="botonBotDerechoLetraMando">B</p>
+
+            <div class="botonIzquierdoDerechoMando"></div>
+                <p class="botonIzquierdoDerechoLetraMando">Y</p>
+
+            <div class="botonDerechoDerechoMando"></div>
+                <p class="botonDerechoDerechoLetraMando">A</p>
+        </div>
+
+        <!--BOTON HOME-->
+
+        <div class="botonVideo" onclick="house()" style="cursor: pointer">
+            <div class="botonBaseCasaMando"></div>
+                <div class="botonBaseCasaNegroMando"></div>
+                <div class="cuadradoCasaMando"></div>
+                <div class="trianguloCasaMando"></div>
+                <div class="miniCuadradoCasaMando"></div>
+        </div>
+
+        <!--BOTON MÁS-->
+        <div class="botonMasHorMando"></div>
+        <div class="botonMasVertMando"></div>
+
+
+
+        <div class="baseDerechaMando"></div>
+
+
+        <!-------------- CENTRO MANDO -------------->
+
+        <div class="centroMando"></div>
+        <div class="arregloIzquierdoMando"></div>
+        <div class="arregloDerechoMando"></div>
+
+        <div class="botoncitosIzquierda">
+            <div class="bi1" id="bi1"></div>
+            <div class="bi2" id="bi2"></div>
+            <div class="bi3" id="bi3"></div>
+            <div class="bi4" id="bi4"></div>
+        </div>
+        <div class="botoncitosDerecha">
+            <div class="bd1" id="bd1"></div>
+            <div class="bd2" id="bd2"></div>
+            <div class="bd3" id="bd3"></div>
+            <div class="bd4" id="bd4"></div>
+        </div>
+
+        <!---------------- LOGO CENTRO MANDO ----------------->
+        <div class="logoMandoIzquierdo"></div>
+        <div class="logoMandoDerecho"></div>
+        <div class="logoCirculoIzquierdo"></div>
+        <div class="logoCirculoDerecho"></div>
+        <div class="logoLetras">NINTENDO <BR><b> &nbsp; SWITCH </b></div>
+
+    </div> <!-- FIN DIV MANDO MANDO-->
+    
+</body>
+</html>

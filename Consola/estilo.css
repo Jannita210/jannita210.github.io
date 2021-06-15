@@ -1,0 +1,2396 @@
+body{
+    background-image: url('wallpaper2.png');
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+button{
+    border-radius: 4px;
+    border-color:#F9918D;
+    background-color: #D2F2F8;
+    color: black;
+    font-size: 16px ;
+}
+
+button:hover{
+    border-radius: 4px;
+    border-color:#D2F2F8;
+    background-color:#F9918D;
+    color: white;
+    font-size: 16px ;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 620px;
+    left: 1410px;
+    z-index: 6;
+}
+
+.video{
+    background-color: black;
+    position: absolute;
+    top: 110px;
+    left: 705px;
+    z-index: 4;
+}
+
+.imagen{
+    position: absolute;
+    width: 535px;
+    height: 302px ;
+    top: 110px;
+    left: 705px;
+    z-index: 4;
+}
+
+/**
+
+----------------------------------------------------------- Portatil------------------------------------------------
+ **/
+
+
+.principal{
+    background-color:  #2C2C2C;
+    width: 173mm;
+    height: 100mm;
+    position: absolute;
+    top: 75px;
+    left: 650px;
+    z-index: 1;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+}
+
+.arregloIzquierdoPortatil{
+    background-color:  #2C2C2C;
+    width: 3mm;
+    height: 97mm;
+    position: absolute;
+    top: 86px;
+    left: 639px;
+    z-index: 1;
+}
+
+.arregloDerechoPortatil{
+    background-color:  #2C2C2C;
+    width: 3mm;
+    height: 97mm;
+    position: absolute;
+    top: 86px;
+    left: 1304px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------IZQUIERDO PORTATIL--------------*/
+
+
+.izquierdo{
+    background-color: #00b5d5;
+    border-radius: 70px 0px 0px 70px;
+    -moz-border-radius: 70px 0px 0px 70px;
+    -webkit-border-radius: 70px 0px 0px 70px;
+    width: 35mm;
+    height: 100mm;
+    position: absolute;
+    top: 75px;
+    left: 507px;
+    z-index: 2;
+}
+
+.izquierdoLuz{
+    background: rgba(222,222,222,1);
+    background: -moz-linear-gradient(-45deg, rgba(222,222,222,1) 0%, rgba(0,181,213,0.73) 29%, rgba(0,181,213,0.08) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(222,222,222,1) 0%, rgba(0,181,213,0.73) 29%, rgba(0,181,213,0.08) 100%);
+    background: -o-linear-gradient(-45deg, rgba(222,222,222,1) 0%, rgba(0,181,213,0.73) 29%, rgba(0,181,213,0.08) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(222,222,222,1) 0%, rgba(0,181,213,0.73) 29%, rgba(0,181,213,0.08) 100%);
+    background: linear-gradient(135deg, rgba(222,222,222,1) 0%, rgba(0,181,213,0.73) 29%, rgba(0,181,213,0.08) 100%);
+    border-radius: 70px 0px 0px 70px;
+    -moz-border-radius: 70px 0px 0px 70px;
+    -webkit-border-radius: 70px 0px 0px 70px;
+    width: 35mm;
+    height: 100mm;
+    position: absolute;
+    top: 75px;
+    left: 507px;
+    z-index: 2;
+}
+
+.gatilloIzquierdo{
+    background-color: #2C2C2C;
+    border-radius: 70px 10px 0px 0px;
+    -moz-border-radius: 70px 10px 0px 0px;
+    -webkit-border-radius: 70px 10px 0px 0px;
+    width: 30mm;
+    height: 15mm;
+    position: absolute;
+    top: 71px;
+    left: 506px;
+    z-index: 1;
+}
+
+        /*------ JOYSTICK IZQUIERDA ------*/
+
+.joystickIzquierdo{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 17mm;
+    height: 17mm;
+    position: absolute;
+    top: 140px;
+    left: 540px;
+    z-index: 3;
+
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.joystickIzquierdoPequeño{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 2px solid #000000;
+    width: 13mm;
+    height: 13mm;
+    position: absolute;
+    top: 145px;
+    left: 545px;
+    z-index: 4;
+
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.joystickIzquierdoTop{
+    background-color: #000000;
+    width: 1mm;
+    height: 2mm;
+    position: absolute;
+    top: 140px;
+    left: 569px;
+    z-index: 5;
+}
+
+.joystickIzquierdoBot{
+    background-color: #000000;
+    width: 1mm;
+    height: 2mm;
+    position: absolute;
+    top: 196px;
+    left: 569px;
+    z-index: 5;
+}
+
+.joystickIzquierdoIzq{
+    background-color: #000000;
+    width: 2mm;
+    height: 1mm;
+    position: absolute;
+    top: 170px;
+    left: 540px;
+    z-index: 5;
+}
+
+.joystickIzquierdoDerecho{
+    background-color: #000000;
+    width: 2mm;
+    height: 1mm;
+    position: absolute;
+    top: 170px;
+    left: 596px;
+    z-index: 5;
+}
+
+
+    /*------BOTONES PEQUEÑOS IZQUIERDA ------*/
+
+
+            /*--BOTON PEQUEÑO TOP IZQUIERDA---*/
+.botonTopIzq{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 240px;
+    left: 558px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.trianguloTop{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 10px 5px;
+    border-color: transparent transparent #000000 transparent;
+    position: absolute;
+    top: 247px;
+    left: 565px;
+    z-index: 4;
+}
+
+
+            /*--BOTON PEQUEÑO BOT IZQUIERDA---*/
+
+.botonBotIzq{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 300px;
+    left: 558px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.trianguloBot{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 5px 0 5px;;
+    border-color: #000000 transparent transparent transparent;
+    position: absolute;
+    top: 310px;
+    left: 565px;
+    z-index: 4;   
+}
+
+
+            /*--BOTON PEQUEÑO IZQUIERDO IZQUIERDA ---*/
+
+.botonIzquierdoIzq{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 270px;
+    left: 528px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.trianguloIzquierda{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 10px 5px 0;
+    border-color: transparent #000000 transparent transparent;
+    position: absolute;
+    top: 278px;
+    left: 535px;
+    z-index: 4;   
+}
+
+            /*--BOTON PEQUEÑO DERECHO IZQUIERDA--*/
+
+.botonDerechoIzq{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 270px;
+    left: 588px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.trianguloDerecha{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 10px;
+        border-color: transparent transparent transparent #000000;
+        position: absolute;
+        top: 278px;
+        left: 598px;
+        z-index: 4;   
+}
+
+
+            /*--SUSPENSION---*/
+
+
+.botonSuspensionCuadrado{
+    background-color: #2C2C2C;
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    width: 6mm;
+    height: 6mm;
+    position: absolute;
+    top: 350px;
+    left: 582px;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonSuspensionCirculoFuera{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 2px solid #000000;
+    width: 4mm;
+    height: 4mm;
+    position: absolute;
+    top: 352px;
+    left: 584px;
+    z-index: 4;
+}
+
+            /*--MENOS---*/
+
+.botonMenos{
+    background-color: #000000;
+    width: 5mm;
+    height: 1mm;
+    position: absolute;
+    top: 105px;
+    left: 605px;
+    z-index: 5;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------------DERECHO PORTATIL---------------------*/
+
+
+.derecho{
+    background-color: #ff5b55;
+    border-radius: 0px 70px 70px 0px;
+    -moz-border-radius: 0px 70px 70px 0px;
+    -webkit-border-radius: 0px 70px 70px 0px;
+    width: 35mm;
+    height: 100mm;
+    position: absolute;
+    top: 75px;
+    left: 1315px;
+    z-index: 2;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+
+.gatilloDerecho{
+    background-color: #2C2C2C;
+    border-radius: 10px 70px 0px 0px;
+    -moz-border-radius: 10px 70px 0px 0px;
+    -webkit-border-radius: 10px 70px 0px 0px;
+    width: 30mm;
+    height: 15mm;
+    position: absolute;
+    top: 71px;
+    left: 1334px;
+    z-index: 1;
+}
+
+/*-----------JOYSTICK DERECHO-----------*/
+.joystickDerecho{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 17mm;
+    height: 17mm;
+    position: absolute;
+    top: 250px;
+    left: 1350px;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.joystickDerechoPequeño{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 2px solid #000000;
+    width: 13mm;
+    height: 13mm;
+    position: absolute;
+    top: 256px;
+    left: 1356px;
+    z-index: 4;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.joystickDerechoTop{
+    background-color: #000000;
+    width: 1mm;
+    height: 2mm;
+    position: absolute;
+    top: 250px;
+    left: 1380px;
+    z-index: 5;
+    
+}
+
+.joystickDerechoBot{
+    background-color: #000000;
+    width: 1mm;
+    height: 1.5mm;
+    position: absolute;
+    top: 308px;
+    left: 1380px;
+    z-index: 5;
+}
+.joystickDerechoIzq{
+    background-color: #000000;
+    width: 2mm;
+    height: 1mm;
+    position: absolute;
+    top: 280px;
+    left: 1350px;
+    z-index: 5;
+}
+
+.joystickDerechoDerecho{
+    background-color: #000000;
+    width: 1.5mm;
+    height: 1mm;
+    position: absolute;
+    top: 280px;
+    left: 1408px;
+    z-index: 5;
+}
+
+            /*--HOME---*/
+
+.botonBaseCasa{
+    background-color: #942D50;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 352px;
+    left: 1349px;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonBaseCasaNegro{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 5.5mm;
+    height: 5.5mm;
+    position: absolute;
+    top: 355px;
+    left: 1352px;
+    z-index: 4;
+}
+
+.cuadradoCasa{
+    background-color: #000000;
+    width: 2mm;
+    height: 2mm;
+    position: absolute;
+    top: 363px;
+    left: 1358px;
+    z-index: 5;
+}
+
+.trianguloCasa{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 5px 6px;
+    border-color: transparent transparent #000000 transparent;
+    position: absolute;
+    top: 359px;
+    left: 1356px;
+    z-index: 5;
+}
+
+.miniCuadradoCasa{
+    background-color: #2C2C2C;
+    width: 1mm;
+    height: 1mm;
+    position: absolute;
+    top: 364px;
+    left: 1360px;
+    z-index: 6;
+}
+
+        /* ----------BOTONES DERECHO------------- */
+
+            /*-- TOP DERECHO --*/
+.botonTopDerecho{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 120px;
+    left: 1368px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonTopDerechoLetra{
+    color: white;
+    position: absolute;
+    top: 108px;
+    left: 1375px;
+    z-index: 4;
+}
+
+            /*-- BOT DERECHO --*/
+.botonBotDerecho{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 170px;
+    left: 1368px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonBotDerechoLetra{
+    color: white;
+    position: absolute;
+    top: 159px;
+    left: 1375px;
+    z-index: 4;
+}
+
+            /*--  IZQUIERDO DERECHO --*/
+.botonIzquierdoDerecho{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 145px;
+    left: 1340px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonIzquierdoDerechoLetra{
+    color: white;
+    position: absolute;
+    top: 133px;
+    left: 1347px;
+    z-index: 4;
+}
+
+
+            /*-- DERECHO DERECHO --*/
+.botonDerechoDerecho{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 145px;
+    left: 1395px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonDerechoDerechoLetra{
+    color: white;
+    position: absolute;
+    top: 133px;
+    left: 1403px;
+    z-index: 4;
+}
+
+            /*--- MAS ---*/
+
+.botonMasHor {
+    background-color: #000000;
+    width: 5mm;
+    height: 1mm;
+    position: absolute;
+    top: 105px;
+    left: 1330px;
+    z-index: 5;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonMasVert{
+    background-color: #000000;
+    width: 1mm;
+    height: 5mm;
+    position: absolute;
+    top: 97px;
+    left: 1337px;
+    z-index: 5;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}  
+
+
+
+
+
+
+
+
+
+
+/*---------------------------PANTALLA-----------------------*/
+
+
+.bordePantalla{
+    background-color: black;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    position: absolute;
+    width: 160mm;
+    height: 95mm;
+    top: 85px;
+    left: 670px;
+    z-index: 2;
+}
+
+.pantalla{
+    background: rgba(150,147,147,1);
+    background: -moz-linear-gradient(-45deg, rgba(150,147,147,1) 0%, rgba(44,44,44,0.78) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(150,147,147,1)), color-stop(100%, rgba(44,44,44,0.78)));
+    background: -webkit-linear-gradient(-45deg, rgba(150,147,147,1) 0%, rgba(44,44,44,0.78) 100%);
+    background: -o-linear-gradient(-45deg, rgba(150,147,147,1) 0%, rgba(44,44,44,0.78) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(150,147,147,1) 0%, rgba(44,44,44,0.78) 100%);
+    background: linear-gradient(135deg, rgba(150,147,147,1) 0%, rgba(44,44,44,0.78) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#969393', endColorstr='#2c2c2c', GradientType=1 );
+    position: absolute;
+    width: 140mm;
+    height: 80mm;
+    top: 110px;
+    left: 706px;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+
+------------------------------------------------------------------------------------------------ Mandos separados ---------------------------------------------------------------------------
+
+ **/
+
+/* --- MANDO IZQUIERDO --*/
+.izquierdoSep{
+    background-color: #00b5d5;
+    border-radius: 0px 0px 70px 70px;
+    -moz-border-radius: 0px 0px 70px 70px;
+    -webkit-border-radius: 0px 0px 70px 70px;
+    height: 35mm;
+    width: 100mm;
+    position: absolute;
+    top: 650px;
+    left: 125px;
+    z-index: 2;    
+}
+
+.izquierdoSepLuz{
+    background: rgba(212,246,255,1);
+    background: -moz-linear-gradient(-45deg, rgba(212,246,255,1) 0%, rgba(0,181,213,0.91) 10%, rgba(0,181,213,0.06) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(212,246,255,1)), color-stop(10%, rgba(0,181,213,0.91)), color-stop(100%, rgba(0,181,213,0.06)));
+    background: -webkit-linear-gradient(-45deg, rgba(212,246,255,1) 0%, rgba(0,181,213,0.91) 10%, rgba(0,181,213,0.06) 100%);
+    background: -o-linear-gradient(-45deg, rgba(212,246,255,1) 0%, rgba(0,181,213,0.91) 10%, rgba(0,181,213,0.06) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(212,246,255,1) 0%, rgba(0,181,213,0.91) 10%, rgba(0,181,213,0.06) 100%);
+    background: linear-gradient(135deg, rgba(212,246,255,1) 0%, rgba(0,181,213,0.91) 10%, rgba(0,181,213,0.06) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4f6ff', endColorstr='#00b5d5', GradientType=1 );
+    border-radius: 0px 0px 70px 70px;
+    -moz-border-radius: 0px 0px 70px 70px;
+    -webkit-border-radius: 0px 0px 70px 70px;
+    height: 35mm;
+    width: 100mm;
+    position: absolute;
+    top: 650px;
+    left: 125px;
+    z-index: 3;    
+}
+
+.negroIzquierdaSep{
+    background-color: #2C2C2C ;
+    border-radius: 70px 70px 0px 0px;
+    -moz-border-radius: 70px 70px 0px 0px;
+    -webkit-border-radius: 70px 70px 0px 0px;
+    height: 13mm;
+    width: 100mm;
+    position: absolute;
+    top: 601px;
+    left: 125px;
+    z-index: 2;
+}
+
+.negroIzquierdaSepLuz{
+    background: rgba(112,112,112,1);
+    background: -moz-linear-gradient(-45deg, rgba(112,112,112,1) 0%, rgba(44,44,44,0.74) 28%, rgba(44,44,44,0.06) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(112,112,112,1)), color-stop(28%, rgba(44,44,44,0.74)), color-stop(100%, rgba(44,44,44,0.06)));
+    background: -webkit-linear-gradient(-45deg, rgba(112,112,112,1) 0%, rgba(44,44,44,0.74) 28%, rgba(44,44,44,0.06) 100%);
+    background: -o-linear-gradient(-45deg, rgba(112,112,112,1) 0%, rgba(44,44,44,0.74) 28%, rgba(44,44,44,0.06) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(112,112,112,1) 0%, rgba(44,44,44,0.74) 28%, rgba(44,44,44,0.06) 100%);
+    background: linear-gradient(135deg, rgba(112,112,112,1) 0%, rgba(44,44,44,0.74) 28%, rgba(44,44,44,0.06) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707070', endColorstr='#2c2c2c', GradientType=1 );
+    border-radius: 70px 70px 0px 0px;
+    -moz-border-radius: 70px 70px 0px 0px;
+    -webkit-border-radius: 70px 70px 0px 0px;
+    height: 13mm;
+    width: 100mm;
+    position: absolute;
+    top: 601px;
+    left: 125px;
+    z-index: 3;
+}
+
+
+
+
+
+
+.gatilloIzquierdoAzulNegro{
+    background-color: #2C2C2C;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    height: 10px;
+    width: 50px;
+    position: absolute;
+    top: 595px;
+    left: 195px;
+    z-index: 1;
+}
+.gatilloDerechoAzulNegro{
+    background-color: #2C2C2C;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    height: 10px;
+    width: 50px;
+    position: absolute;
+    top: 595px;
+    left: 370px;
+    z-index: 1;
+}
+
+.botonMenosGatilloNegroAzul{
+    background-color: black;
+    height: 5mm;
+    width: 1mm;
+    position: absolute;
+    top: 617px;
+    left: 160px;
+    z-index: 3;
+}
+
+.plaquitaBlancaAzul{
+    background-color: white;
+    width: 7px;
+    height: 20px;
+    position: absolute;
+    top: 606px;
+    left: 485px;
+    z-index: 1;
+}
+
+.gatilloIzquierdoSep{
+    background-color: #2C2C2C;
+    border-radius: 0px 0px 10px 70px;
+    -moz-border-radius: 0px 0px 10px 70px;
+    -webkit-border-radius: 0px 0px 10px 70px;
+    width: 30mm;
+    height: 15mm;
+    position: absolute;
+    top: 732px;
+    left: 123px;
+    z-index: 1; 
+}
+
+.joystickIzquierdoSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 17mm;
+    height: 17mm;
+    position: absolute;
+    top: 680px;
+    left: 190px;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.joystickIzquierdoPequeñoSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 2px solid #000000;
+    width: 13mm;
+    height: 13mm;
+    position: absolute;
+    top: 685px;
+    left: 195px;
+    z-index: 4;
+
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.joystickIzquierdoTopSep{
+    background-color: #000000;
+    width: 1mm;
+    height: 2mm;
+    position: absolute;
+    top: 680px;
+    left: 219px;
+    z-index: 5;
+}
+
+.joystickIzquierdoBotSep{
+    background-color: #000000;
+    width: 1mm;
+    height: 2mm;
+    position: absolute;
+    top: 735px;
+    left: 219px;
+    z-index: 5;
+}
+
+.joystickIzquierdoIzqSep{
+    background-color: #000000;
+    width: 2mm;
+    height: 1mm;
+    position: absolute;
+    top: 710px;
+    left: 190px;
+    z-index: 5;
+}
+
+.joystickIzquierdoDerechoSep{
+    background-color: #000000;
+    width: 2mm;
+    height: 1mm;
+    position: absolute;
+    top: 710px;
+    left: 246px;
+    z-index: 5;
+}
+
+.botonTopIzqSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 665px;
+    left: 320px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.trianguloTopSep{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 10px 5px;
+    border-color: transparent transparent #000000 transparent;
+    position: absolute;
+    top: 672px;
+    left: 327px;
+    z-index: 4;
+}
+
+.botonBotIzqSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 720px;
+    left: 320px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.trianguloBotSep{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 5px 0 5px;;
+    border-color: #000000 transparent transparent transparent;
+    position: absolute;
+    top: 728px;
+    left: 327px;
+    z-index: 4;   
+}
+
+.botonIzquierdoIzqSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 692px;
+    left: 285px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.trianguloIzquierdaSep{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 10px 5px 0;
+    border-color: transparent #000000 transparent transparent;
+    position: absolute;
+    top: 700px;
+    left: 292px;
+    z-index: 4;   
+}
+
+.botonDerechoIzqSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 692px;
+    left: 355px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.trianguloDerechaSep{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent #000000;
+    position: absolute;
+    top: 700px;
+    left: 365px;
+    z-index: 4;   
+}
+
+.botonSuspensionCuadradoSep{
+    background-color: #2C2C2C;
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    width: 6mm;
+    height: 6mm;
+    position: absolute;
+    top: 670px;
+    left: 405px;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonSuspensionCirculoFueraSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 2px solid #000000;
+    width: 4mm;
+    height: 4mm;
+    position: absolute;
+    top: 672px;
+    left: 407px;
+    z-index: 4;
+}
+
+.botonMenosSep{
+    background-color: #000000;
+    width: 1mm;
+    height: 5mm;
+    position: absolute;
+    top: 665px;
+    left: 160px;
+    z-index: 5;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --- MANDO DERECHO --*/
+.derechoSep{
+    background-color: #ff5b55;
+    border-radius: 0px 0px 70px 70px;
+    -moz-border-radius: 0px 0px 70px 70px;
+    -webkit-border-radius: 0px 0px 70px 70px;
+    height: 35mm;
+    width: 100mm;
+    position: absolute;
+    top: 650px;
+    left: 550px;
+    z-index: 2;
+}
+
+.DerechaSepLuz{
+    background: rgba(242,207,206,1);
+    background: -moz-linear-gradient(-45deg, rgba(242,207,206,1) 0%, rgba(255,91,85,0.91) 10%, rgba(255,91,85,0.06) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(242,207,206,1)), color-stop(10%, rgba(255,91,85,0.91)), color-stop(100%, rgba(255,91,85,0.06)));
+    background: -webkit-linear-gradient(-45deg, rgba(242,207,206,1) 0%, rgba(255,91,85,0.91) 10%, rgba(255,91,85,0.06) 100%);
+    background: -o-linear-gradient(-45deg, rgba(242,207,206,1) 0%, rgba(255,91,85,0.91) 10%, rgba(255,91,85,0.06) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(242,207,206,1) 0%, rgba(255,91,85,0.91) 10%, rgba(255,91,85,0.06) 100%);
+    background: linear-gradient(135deg, rgba(242,207,206,1) 0%, rgba(255,91,85,0.91) 10%, rgba(255,91,85,0.06) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2cfce', endColorstr='#ff5b55', GradientType=1 );
+    border-radius: 0px 0px 70px 70px;
+    -moz-border-radius: 0px 0px 70px 70px;
+    -webkit-border-radius: 0px 0px 70px 70px;
+    height: 35mm;
+    width: 100mm;
+    position: absolute;
+    top: 650px;
+    left: 550px;
+    z-index: 3;
+}
+
+.negroDerechaSep{
+    background-color: #2C2C2C ;
+    border-radius: 70px 70px 0px 0px;
+    -moz-border-radius: 70px 70px 0px 0px;
+    -webkit-border-radius: 70px 70px 0px 0px;
+    height: 13mm;
+    width: 100mm;
+    position: absolute;
+    top: 601px;
+    left: 550px;
+    z-index: 2;
+}
+
+.negroDerechaSepLuz{
+    background: rgba(112,112,112,1);
+    background: -moz-linear-gradient(-45deg, rgba(112,112,112,1) 0%, rgba(44,44,44,0.74) 28%, rgba(44,44,44,0.06) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(112,112,112,1)), color-stop(28%, rgba(44,44,44,0.74)), color-stop(100%, rgba(44,44,44,0.06)));
+    background: -webkit-linear-gradient(-45deg, rgba(112,112,112,1) 0%, rgba(44,44,44,0.74) 28%, rgba(44,44,44,0.06) 100%);
+    background: -o-linear-gradient(-45deg, rgba(112,112,112,1) 0%, rgba(44,44,44,0.74) 28%, rgba(44,44,44,0.06) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(112,112,112,1) 0%, rgba(44,44,44,0.74) 28%, rgba(44,44,44,0.06) 100%);
+    background: linear-gradient(135deg, rgba(112,112,112,1) 0%, rgba(44,44,44,0.74) 28%, rgba(44,44,44,0.06) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707070', endColorstr='#2c2c2c', GradientType=1 );
+    border-radius: 70px 70px 0px 0px;
+    -moz-border-radius: 70px 70px 0px 0px;
+    -webkit-border-radius: 70px 70px 0px 0px;
+    height: 13mm;
+    width: 100mm;
+    position: absolute;
+    top: 601px;
+    left: 550px;
+    z-index: 3;
+}
+
+
+
+
+.gatilloIzquierdoRojoNegro{
+    background-color: #2C2C2C;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    height: 10px;
+    width: 50px;
+    position: absolute;
+    top: 595px;
+    left: 625px;
+    z-index: 1;
+}
+
+/*-------- MANDO ROJO SEPARADOS ------*/
+.gatilloDerechoRojoNegro{
+    background-color: #2C2C2C;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    height: 10px;
+    width: 50px;
+    position: absolute;
+    top: 595px;
+    left: 800px;
+    z-index: 1;
+}
+
+.plaquitaBlancaRojo{
+    background-color: white;
+    width: 7px;
+    height: 20px;
+    position: absolute;
+    top: 606px;
+    left: 560px;
+    z-index: 1;
+}
+
+.botonMasGatilloNegroRojoHor{
+    background-color: black;
+    height: 1mm;
+    width: 5mm;
+    position: absolute;
+    top: 622px;
+    left: 880px;
+    z-index: 3;
+}
+
+.botonMasGatilloNegroRojoVer{
+    background-color: black;
+    height: 5mm;
+    width: 1mm;
+    position: absolute;
+    top: 615px;
+    left: 887px;
+    z-index: 3;
+}
+
+.gatilloDerechoSep{
+    background-color: #2C2C2C;
+    border-radius: 0px 0px 70px 10px;
+    -moz-border-radius: 0px 0px 70px 10px;
+    -webkit-border-radius: 0px 0px 70px 10px;
+    width: 30mm;
+    height: 15mm;
+    position: absolute;
+    top: 734px;
+    left: 817px;
+    z-index: 1;
+}
+
+.joystickDerechoSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 17mm;
+    height: 17mm;
+    position: absolute;
+    top: 680px;
+    left: 680px;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.joystickDerechoPequeñoSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 2px solid #000000;
+    width: 13mm;
+    height: 13mm;
+    position: absolute;
+    top: 685px;
+    left: 685px;
+    z-index: 4;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.joystickDerechoTopSep{
+    background-color: #000000;
+    width: 1mm;
+    height: 2mm;
+    position: absolute;
+    top: 680px;
+    left: 710px;
+    z-index: 5;
+}
+
+.joystickDerechoBotSep{
+    background-color: #000000;
+    width: 1mm;
+    height: 1.5mm;
+    position: absolute;
+    top: 737px;
+    left: 710px;
+    z-index: 5;
+}
+
+.joystickDerechoIzqSep{
+    background-color: #000000;
+    width: 2mm;
+    height: 1mm;
+    position: absolute;
+    top: 710px;
+    left: 680px;
+    z-index: 5;
+}
+
+.joystickDerechoDerechoSep{
+    background-color: #000000;
+    width: 1.5mm;
+    height: 1mm;
+    position: absolute;
+    top: 710px;
+    left: 738px;
+    z-index: 5;
+}
+
+.botonTopDerechoSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 665px;
+    left: 810px;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonTopDerechoLetraSep{
+    color: white;
+    position: absolute;
+    top: 653px;
+    left: 817px;
+    z-index: 4;
+    transform: rotate(90deg);
+}
+
+.botonBotDerechoSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 720px;
+    left: 810px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonBotDerechoLetraSep{
+    color: white;
+    position: absolute;
+    top: 707px;
+    left: 817px;
+    z-index: 4;
+    transform: rotate(90deg);
+}
+
+.botonIzquierdoDerechoSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 692px;
+    left: 775px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonIzquierdoDerechoLetraSep{
+    color: white;
+    position: absolute;
+    top: 680px;
+    left: 782px;
+    z-index: 4;
+    transform: rotate(90deg);
+}
+
+.botonDerechoDerechoSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 692px;
+    left: 845px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonDerechoDerechoLetraSep{
+    color: white;
+    position: absolute;
+    top: 680px;
+    left: 852px;
+    z-index: 4;
+    transform: rotate(90deg);
+}
+
+.botonBaseCasaSep{
+    background-color: #942D50;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 672px;
+    left: 620px;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonBaseCasaNegroSep{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 5.5mm;
+    height: 5.5mm;
+    position: absolute;
+    top: 674px;
+    left: 622px;
+    z-index: 4;
+}
+
+.cuadradoCasaSep{
+    background-color: #000000;
+    width: 2mm;
+    height: 2mm;
+    position: absolute;
+    top: 680px;
+    left: 626px;
+    z-index: 5;
+}
+
+.trianguloCasaSep{
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid #000000;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent; 
+    position: absolute;
+    top: 677px;
+    left: 630px;
+    z-index: 5;
+}
+
+.miniCuadradoCasaSep{
+    background-color: #2C2C2C;
+    width: 1mm;
+    height: 1mm;
+    position: absolute;
+    top: 682px;
+    left: 629px;
+    z-index: 6;
+}
+
+
+.botonMasHorSep{
+    background-color: #000000;
+    width: 5mm;
+    height: 1mm;
+    position: absolute;
+    top: 665px;
+    left: 880px;
+    z-index: 5;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonMasVertSep{
+    background-color: #000000;
+    width: 1mm;
+    height: 5mm;
+    position: absolute;
+    top: 658px;
+    left: 887px;
+    z-index: 5;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+
+
+
+
+
+/**
+
+----------------------------------- Mandos juntos  -------------------------------------
+
+**/
+
+.izquierdoMando{
+    background-color: #00b5d5;
+    border-radius: 70px 0px 0px 70px;
+    -moz-border-radius: 70px 0px 0px 70px;
+    -webkit-border-radius: 70px 0px 0px 70px;
+    width: 35mm;
+    height: 100mm;
+    position: absolute;
+    top: 510px;
+    left: 1264px;
+    z-index: 2;
+}
+
+
+.izquierdoLuzJuntos{
+    background: rgba(222,222,222,1);
+    background: -moz-linear-gradient(-45deg, rgba(222,222,222,1) 0%, rgba(0,181,213,0.73) 29%, rgba(0,181,213,0.08) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(222,222,222,1) 0%, rgba(0,181,213,0.73) 29%, rgba(0,181,213,0.08) 100%);
+    background: -o-linear-gradient(-45deg, rgba(222,222,222,1) 0%, rgba(0,181,213,0.73) 29%, rgba(0,181,213,0.08) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(222,222,222,1) 0%, rgba(0,181,213,0.73) 29%, rgba(0,181,213,0.08) 100%);
+    background: linear-gradient(135deg, rgba(222,222,222,1) 0%, rgba(0,181,213,0.73) 29%, rgba(0,181,213,0.08) 100%);
+    border-radius: 70px 0px 0px 70px;
+    -moz-border-radius: 70px 0px 0px 70px;
+    -webkit-border-radius: 70px 0px 0px 70px;
+    width: 35mm;
+    height: 100mm;
+    position: absolute;
+    top: 510px;
+    left: 1264px;
+    z-index: 3;
+}
+
+.gatilloIzquierdoMando{
+    background-color: #2C2C2C;
+    border-radius: 70px 10px 0px 0px;
+    -moz-border-radius: 70px 10px 0px 0px;
+    -webkit-border-radius: 70px 10px 0px 0px;
+    width: 30mm;
+    height: 15mm;
+    position: absolute;
+    top: 508px;
+    left: 1263px;
+    z-index: 1;
+}
+
+        /*------ JOYSTICK IZQUIERDA MANDOS JUNTOS ------*/
+
+.joystickIzquierdoMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 17mm;
+    height: 17mm;
+    position: absolute;
+    top: 565px;
+    left: 1295px;
+    z-index: 3;
+
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.joystickIzquierdoPequeñoMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 2px solid #000000;
+    width: 13mm;
+    height: 13mm;
+    position: absolute;
+    top: 571px;
+    left: 1301px;
+    z-index: 4;
+
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.joystickIzquierdoTopMando{
+    background-color: #000000;
+    width: 1mm;
+    height: 2mm;
+    position: absolute;
+    top: 565px;
+    left: 1325px;
+    z-index: 5;
+}
+
+.joystickIzquierdoBotMando{
+    background-color: #000000;
+    width: 1mm;
+    height: 2mm;
+    position: absolute;
+    top: 622px;
+    left: 1325px;
+    z-index: 5;
+}
+
+.joystickIzquierdoIzqMando{
+    background-color: #000000;
+    width: 2mm;
+    height: 1mm;
+    position: absolute;
+    top: 596px;
+    left: 1295px;
+    z-index: 5;
+}
+
+.joystickIzquierdoDerechoMando{
+    background-color: #000000;
+    width: 2mm;
+    height: 1mm;
+    position: absolute;
+    top: 596px;
+    left: 1352px;
+    z-index: 5;
+}
+
+
+    /*------BOTONES PEQUEÑOS IZQUIERDA  MANDOS JUNTOS------*/
+
+
+            /*--BOTON PEQUEÑO TOP IZQUIERDA  MANDOS JUNTOS---*/
+.botonTopIzqMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 665px;
+    left: 1314px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.trianguloTopMando{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 10px 5px;
+    border-color: transparent transparent #000000 transparent;
+    position: absolute;
+    top: 671px;
+    left: 1322px;
+    z-index: 4;
+}
+
+
+            /*--BOTON PEQUEÑO BOT IZQUIERDA  MANDOS JUNTOS---*/
+
+.botonBotIzqMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 720px;
+    left: 1314px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.trianguloBotMando{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 5px 0 5px;;
+    border-color: #000000 transparent transparent transparent;
+    position: absolute;
+    top: 728px;
+    left: 1322px;
+    z-index: 4;   
+}
+
+
+            /*--BOTON PEQUEÑO IZQUIERDO IZQUIERDA  MANDOS JUNTOS ---*/
+
+.botonIzquierdoIzqMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 690px;
+    left: 1287px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.trianguloIzquierdaMando{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 10px 5px 0;
+    border-color: transparent #000000 transparent transparent;
+    position: absolute;
+    top: 697px;
+    left: 1292px;
+    z-index: 4;   
+}
+
+            /*--BOTON PEQUEÑO DERECHO IZQUIERDA  MANDOS JUNTOS--*/
+
+.botonDerechoIzqMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 690px;
+    left: 1345px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.trianguloDerechaMando{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 10px;
+        border-color: transparent transparent transparent #000000;
+        position: absolute;
+        top: 697px;
+        left: 1355px;
+        z-index: 4;   
+}
+
+
+            /*--SUSPENSION  MANDOS JUNTOS---*/
+
+
+.botonSuspensionCuadradoMando{
+    background-color: #2C2C2C;
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    width: 6mm;
+    height: 6mm;
+    position: absolute;
+    top: 765px;
+    left: 1345px;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonSuspensionCirculoFueraMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 2px solid #000000;
+    width: 4mm;
+    height: 4mm;
+    position: absolute;
+    top: 767px;
+    left: 1347px;
+    z-index: 4;
+}
+
+            /*--MENOS  MANDOS JUNTOS---*/
+
+.botonMenosMando{
+    background-color: #000000;
+    width: 5mm;
+    height: 1mm;
+    position: absolute;
+    top: 530px;
+    left: 1360px;
+    z-index: 5;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+        /* --- MANDO DERECHO MANDOS JUNTOS ----*/
+.derechoMando{
+    background-color: #ff5b55;
+    border-radius: 0px 70px 70px 0px;
+    -moz-border-radius: 0px 70px 70px 0px;
+    -webkit-border-radius: 0px 70px 70px 0px;
+    width: 35mm;
+    height: 100mm;
+    position: absolute;
+    top: 510px;
+    left: 1575px;
+    z-index: 2;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+
+
+.gatilloDerechoMando{
+    background-color: #2C2C2C;
+    border-radius: 10px 70px 0px 0px;
+    -moz-border-radius: 10px 70px 0px 0px;
+    -webkit-border-radius: 10px 70px 0px 0px;
+    width: 30mm;
+    height: 15mm;
+    position: absolute;
+    top: 508px;
+    left: 1595px;
+    z-index: 1;
+}
+
+/*-----------JOYSTICK DERECHO-----------*/
+.joystickDerechoMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 17mm;
+    height: 17mm;
+    position: absolute;
+    top: 675px;
+    left: 1610px;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.joystickDerechoPequeñoMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 2px solid #000000;
+    width: 13mm;
+    height: 13mm;
+    position: absolute;
+    top: 680px;
+    left: 1615px;
+    z-index: 4;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.joystickDerechoTopMando{
+    background-color: #000000;
+    width: 1mm;
+    height: 2mm;
+    position: absolute;
+    top: 675px;
+    left: 1640px;
+    z-index: 5;
+    
+}
+
+.joystickDerechoBotMando{
+    background-color: #000000;
+    width: 1mm;
+    height: 1.5mm;
+    position: absolute;
+    top: 732px;
+    left: 1640px;
+    z-index: 5;
+}
+.joystickDerechoIzqMando{
+    background-color: #000000;
+    width: 2mm;
+    height: 1mm;
+    position: absolute;
+    top: 705px;
+    left: 1610px;
+    z-index: 5;
+}
+
+.joystickDerechoDerechoMando{
+    background-color: #000000;
+    width: 1.5mm;
+    height: 1mm;
+    position: absolute;
+    top: 705px;
+    left: 1667px;
+    z-index: 5;
+}
+
+            /*--HOME---*/
+
+.botonBaseCasaMando{
+    background-color: #942D50;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 765px;
+    left: 1600px;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonBaseCasaNegroMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 5.5mm;
+    height: 5.5mm;
+    position: absolute;
+    top: 768px;
+    left: 1603px;
+    z-index: 4;
+}
+
+.cuadradoCasaMando{
+    background-color: #000000;
+    width: 2mm;
+    height: 2mm;
+    position: absolute;
+    top: 775px;
+    left: 1609px;
+    z-index: 5;
+}
+
+.trianguloCasaMando{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 5px 6px;
+    border-color: transparent transparent #000000 transparent;
+    position: absolute;
+    top: 772px;
+    left: 1607px;
+    z-index: 5;
+}
+
+.miniCuadradoCasaMando{
+    background-color: #2C2C2C;
+    width: 1mm;
+    height: 1mm;
+    position: absolute;
+    top: 777px;
+    left: 1611px;
+    z-index: 6;
+}
+
+        /* ----------BOTONES DERECHO------------- */
+
+            /*-- TOP DERECHO --*/
+.botonTopDerechoMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 555px;
+    left: 1630px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonTopDerechoLetraMando{
+    color: white;
+    position: absolute;
+    top: 544px;
+    left: 1638px;
+    z-index: 4;
+}
+
+            /*-- BOT DERECHO --*/
+.botonBotDerechoMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 610px;
+    left: 1630px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonBotDerechoLetraMando{
+    color: white;
+    position: absolute;
+    top: 600px;
+    left: 1637px;
+    z-index: 4;
+}
+
+            /*--  IZQUIERDO DERECHO --*/
+.botonIzquierdoDerechoMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 583px;
+    left: 1600px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonIzquierdoDerechoLetraMando{
+    color: white;
+    position: absolute;
+    top: 573px;
+    left: 1607px;
+    z-index: 4;
+}
+
+
+            /*-- DERECHO DERECHO --*/
+.botonDerechoDerechoMando{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 7mm;
+    height: 7mm;
+    position: absolute;
+    top: 583px;
+    left: 1660px ;
+    z-index: 3;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonDerechoDerechoLetraMando{
+    color: white;
+    position: absolute;
+    top: 572px;
+    left: 1668px;
+    z-index: 4;
+}
+
+            /*--- MAS ---*/
+
+.botonMasHorMando {
+    background-color: #000000;
+    width: 5mm;
+    height: 1mm;
+    position: absolute;
+    top: 530px;
+    left: 1590px;
+    z-index: 5;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}
+
+.botonMasVertMando{
+    background-color: #000000;
+    width: 1mm;
+    height: 5mm;
+    position: absolute;
+    top: 523px;
+    left: 1597px;
+    z-index: 5;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+    box-shadow: 2px 2px 5px 0px rgba(117,115,117,1);
+}  
+
+
+
+        /* -- CENTRO MANDOS JUNTOS --*/
+
+.centroMando{
+    background-color: #2C2C2C ;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    width: 42mm;
+    height: 100mm;
+    position: absolute;
+    top: 510px;
+    left: 1405px;
+    z-index: 2;
+}
+
+
+.baseIzquierdaMando{
+    background: rgba(44,44,44,1);
+    background: -moz-linear-gradient(left, rgba(44,44,44,1) 0%, rgba(18,18,18,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(44,44,44,1)), color-stop(100%, rgba(18,18,18,1)));
+    background: -webkit-linear-gradient(left, rgba(44,44,44,1) 0%, rgba(18,18,18,1) 100%);
+    background: -o-linear-gradient(left, rgba(44,44,44,1) 0%, rgba(18,18,18,1) 100%);
+    background: -ms-linear-gradient(left, rgba(44,44,44,1) 0%, rgba(18,18,18,1) 100%);
+    background: linear-gradient(to right, rgba(44,44,44,1) 0%, rgba(18,18,18,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2c2c', endColorstr='#121212', GradientType=1 );
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 30px 200px 200px 200px;
+    -moz-border-radius: 30px 20px 200px 200px;
+    -webkit-border-radius: 30px 200px 200px 200px;
+    width: 40mm;
+    height: 80mm;
+    position: absolute;
+    transform:rotateZ(20deg);
+    top: 640px;
+    left: 1205px;
+    z-index: 1;
+}
+
+.baseDerechaMando{
+    background-color: #121212;
+    border-radius: 200px 200px 200px 30px;
+    -moz-border-radius: 200px 200px 200px 30px;
+    -webkit-border-radius: 200px 200px 200px 30px;
+    width: 40mm;
+    height: 80mm;
+    position: absolute;
+    transform:rotateZ(158deg);
+    top: 640px;
+    left: 1623px;
+    z-index: 1;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    
+}
+
+
+.arregloIzquierdoMando{
+    background-color:  #2C2C2C;
+    width: 3mm;
+    height: 97mm;
+    position: absolute;
+    top: 522px;
+    left: 1396px;
+    z-index: 2;
+}
+.arregloDerechoMando{
+    background-color:  #2C2C2C;
+    width: 3mm;
+    height: 97mm;
+    position: absolute;
+    top: 522px;
+    left: 1564px;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------- LOGO MANDOS JUNTOS ------------------------*/
+
+.logoMandoIzquierdo{
+    border-radius: 55px 0px 0px 55px;
+    -moz-border-radius: 55px 0px 0px 55px;
+    -webkit-border-radius: 55px 0px 0px 55px;
+    border: 10px solid #000000;
+    width: 40px;
+    height: 130px;
+    position: absolute;
+    top: 580px;
+    left: 1420px;
+    z-index: 6;
+}
+
+.logoMandoDerecho{
+    background-color: black;
+    border-radius: 0px 55px 55px 0px;
+    -moz-border-radius: 0px 55px 55px 0px;
+    -webkit-border-radius: 0px 55px 55px 0px;
+    border: 10px solid #000000;
+    width: 40px;
+    height: 130px;
+    position: absolute;
+    top: 580px;
+    left: 1485px;
+    z-index: 6;
+}
+
+.logoCirculoIzquierdo{
+    background-color: black;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 625px;
+    left: 1440px;
+    z-index: 7;
+}
+
+.logoCirculoDerecho{
+    background-color: #2C2C2C;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 660px;
+    left: 1500px;
+    z-index: 7;
+}
+
+.logoLetras{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 750px;
+    left: 1435px;
+    z-index: 7;
+}
+
+.bi1{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 650px;
+    left: 1402px;
+    z-index: 7;
+}
+
+.bi2{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 665px;
+    left: 1402px;
+    z-index: 7;
+}
+
+.bi3{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 680px;
+    left: 1402px;
+    z-index: 7;
+}
+
+.bi4{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 695px;
+    left: 1402px;
+    z-index: 7;
+}
+
+.bd1{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 650px;
+    left: 1555px;
+    z-index: 7;
+}
+
+
+.bd2{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 665px;
+    left: 1555px;
+    z-index: 7;
+}
+
+.bd3{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 680px;
+    left: 1555px;
+    z-index: 7;
+}
+
+.bd4{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 695px;
+    left: 1555px;
+    z-index: 7;
+}
