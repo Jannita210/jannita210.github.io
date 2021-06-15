@@ -213,17 +213,7 @@
 
     </script>
 </head>
-<body>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            //Disable full page
-            $("body").on("contextmenu",function(e){
-                return false;
-            });
-            
-            
-        });
-    </script>
+<body oncontextmenu='return false' onkeydown='return false'>
     <center>
         <button onclick="dosJugadores()"> Dos jugadores </button>
         <button onclick="mando()"> Mando </button>
