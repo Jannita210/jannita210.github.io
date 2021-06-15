@@ -6,15 +6,6 @@
     <title>Nintendo Switch by: Paloma</title>
     <link rel="stylesheet" href="estilo.css">
     <script>
-
-        $(document).ready(function () {
-            //Disable full page
-            $("body").on("contextmenu",function(e){
-                return false;
-            });
-            
-        });
-
         var miArray = new Array (9)
                     miArray[0] = "videos/Bayonetta2.mp4" 
                     miArray[1] = "videos/OT.mp4"
@@ -223,6 +214,16 @@
     </script>
 </head>
 <body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //Disable full page
+            $("body").on("contextmenu",function(e){
+                return false;
+            });
+            
+            
+        });
+    </script>
     <center>
         <button onclick="dosJugadores()"> Dos jugadores </button>
         <button onclick="mando()"> Mando </button>
