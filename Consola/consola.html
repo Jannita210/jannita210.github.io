@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="estilo.css">
     <script>
 
+        $(document).ready(function () {
+            //Disable full page
+            $("body").on("contextmenu",function(e){
+                return false;
+            });
+            
+        });
+
         var miArray = new Array (9)
                     miArray[0] = "videos/Bayonetta2.mp4" 
                     miArray[1] = "videos/OT.mp4"
