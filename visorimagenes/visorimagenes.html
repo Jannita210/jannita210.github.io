@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estructura.css">
+    <script>
+
+        var miArray = new Array (6)
+            miArray[0] = "images/111.png" 
+            miArray[1] = "images/222.png"
+            miArray[2] = "images/333.png"
+            miArray[3] = "images/444.png"
+            miArray[4] = "images/555.png"
+            miArray[5] = "images/666.png"
+           
+
+        var cont
+        cont = 1
+
+        function pasarAlante(){ 
+
+            if (cont < 6){
+                document.images[1].src = miArray [cont]
+                cont ++
+            }
+
+            console.log(cont)
+
+        }
+
+
+        function pasarAtras(){
+            
+            if (cont >=2) {
+                document.images[1].src = miArray [cont-2]
+                cont --
+            }
+            else
+            document.images[1].src = miArray [0]
+
+            console.log(cont)
+
+        }
+
+        
+
+    </script>
+</head>
+<body>
+    <center>
+    <img class="izquierda" src="images/izq.png" onclick="pasarAtras()"> 
+    <img class="imagenes" src="images/111.png">
+    <img class="derecha"  src="images/derecha.png" onclick="pasarAlante()"> 
+    </center>       
+</body>
+</html>
