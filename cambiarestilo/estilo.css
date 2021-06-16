@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    max-width: 280px;
+    margin: 25px auto;
+    background-image: url(wallpaper.jpg);
+}
+
+.fuente, .color , .tamaño, .estilo {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 20px;
+    background: #AE9DE9;
+    color: white;
+    border: 2px solid #5A3EBB;
+    box-shadow: -3px -3px 3px #785FCF, 3px -3px 3px #785FCF, -3px 3px 3px #785FCF, 3px 3px 3px #785FCF;
+}
+
+.texto{ 
+    border: 2px solid #5A3EBB;
+    
+}
+.nombre{
+    padding: 5px;
+    font-size: 16px;
+    align-self: center; /* alinear elemento al centro en altura */
+    text-align: center; /* alinear el texto al centro en ancho */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 2px #5A3EBB;
+    text-shadow: -3px -3px 3px #785FCF, 3px -3px 3px #785FCF, -3px 3px 3px #785FCF, 3px 3px 3px #785FCF;
+}
+
+p {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+    background-color: #5A3EBB; 
+    color: white; 
+    border: 2px solid #5A3EBB;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #5A3EBB;
+    cursor: pointer;
+}
+
+input[type="color"] {
+    width: 135px;
+    height: 30px;
+    padding: 0px;
+}
+

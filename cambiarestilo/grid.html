@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Estilo</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script>
+
+     
+
+        function pasarEstilo(){
+            document.getElementById('uno').innerHTML = document.miform.caja5.value;
+
+            document.getElementById('uno').style.fontFamily= document.miform.fuentecilla.value;
+
+            document.getElementById('uno').style.color = document.miform.colores.value;
+
+            document.getElementById('uno').style.fontSize = document.miform.tamañinchi.value + "pt";
+                 
+            if (document.miform.stylillo.value == 'normal'){
+                document.getElementById('uno').style.textDecoration = 'none';
+                document.getElementById('uno').style.fontWeight = 'normal';
+                document.getElementById('uno').style.fontStyle = 'normal';
+            } else {    
+            document.getElementById('uno').style.fontWeight = document.miform.stylillo.value;
+            document.getElementById('uno').style.fontStyle = document.miform.stylillo.value;
+            document.getElementById('uno').style.textDecoration = document.miform.stylillo.value}
+        }
+
+
+    </script>
+</head>
+<body>
+    
+    <h1> Crea tu propio estilo </h1>
+    <br>
+    <form name="miform">
+
+        <div class="fuente">
+            <div class="nombre"> Fuente </div>
+            <select name="fuentecilla" onchange="pasarEstilo(this.value)">
+                <option value="Arial"> Arial </option>
+                <option value="Verdana"> Verdana </option>
+                <option value="Courier" > Courier </option>
+                <option value="Fantasy"> Fantasy </option>
+                <option value="Comic Sans MS"> Comic Sans</option>
+                <option value="Georgia"> Georgia </option>
+                <option value="Book Antiqua"> Book Antiqua </option>
+                <option value="Lucida Console"> Lucida Console </option>
+            </select>
+        </div>
+
+
+
+        <div class="color">
+            <div class="nombre"> Color </div>
+            <input type="color" name="colores" onchange="pasarEstilo(this.value)">
+        </div>
+
+
+
+        <div class="tamaño">
+            <div class="nombre"> Tamaño </div>
+            <input type="number" value="12" name="tamañinchi" onchange="pasarEstilo(this.value)"/>
+        </div>
+
+
+
+        <div class="estilo">
+            <div class="nombre"> Estilo </div>
+            <select name="stylillo" onchange="pasarEstilo(this.value)">
+                <option value="normal"> Por defecto </option>
+                <option value="underline"> Subrayado </option>
+                <option value="underline dotted"> Subrayado puntos </option>
+                <option value="underline wavy"> Subrayado olas </option>
+                <option value="line-through"> Tachado </option>
+                <option value="italic" > Cursiva </option>
+                <option value="bold"> Negrita </option>
+
+            </select>
+            
+        </div>
+
+        <div class="texto">
+            <input type="text" name="caja5" size="34" placeholder="Escribe aquí su texto"> 
+        </div>
+
+        <br>
+
+        <center> <button type="button" onclick="pasarEstilo()"> Estilo </button> </center>
+
+    </form>
+
+        <div>
+            <p id="uno"> </p>
+        </div>
+
+
+</body>
+</html>
