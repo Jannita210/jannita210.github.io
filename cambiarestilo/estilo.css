@@ -6,7 +6,7 @@ body {
     
 }
 
-.fuente, .color , .tamaño, .estilo, .subrayado, .gruesos{
+.fuente, .color , .tamaño, .estilo, .subrayado, .gruesos {
     display:grid;
     grid-template-columns: 50% 50%;
     margin-bottom: 20px;
