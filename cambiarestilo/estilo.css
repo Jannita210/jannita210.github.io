@@ -3,9 +3,10 @@ body {
     max-width: 280px;
     margin: 25px auto;
     background-image: url(wallpaper.jpg);
+    
 }
 
-.fuente, .color , .tamaño, .estilo {
+.fuente, .color , .tamaño, .estilo, .subrayado, .gruesos {
     display:grid;
     grid-template-columns: 50% 50%;
     margin-bottom: 20px;
@@ -41,6 +42,8 @@ button {
     background-color: #5A3EBB; 
     color: white; 
     border: 2px solid #5A3EBB;
+    height: 40px;
+    padding: 10px;
 }
 
 button:hover {
@@ -56,3 +59,7 @@ input[type="color"] {
     padding: 0px;
 }
 
+select option:disabled{
+    color: red;
+    font-weight: bolder;
+}

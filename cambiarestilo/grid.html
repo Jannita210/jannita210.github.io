@@ -18,14 +18,31 @@
 
             document.getElementById('uno').style.fontSize = document.miform.tamañinchi.value + "pt";
                  
-            if (document.miform.stylillo.value == 'normal'){
-                document.getElementById('uno').style.textDecoration = 'none';
-                document.getElementById('uno').style.fontWeight = 'normal';
-                document.getElementById('uno').style.fontStyle = 'normal';
-            } else {    
-            document.getElementById('uno').style.fontWeight = document.miform.stylillo.value;
+            document.getElementById('uno').style.fontWeight = document.miform.grueso.value;
+
             document.getElementById('uno').style.fontStyle = document.miform.stylillo.value;
-            document.getElementById('uno').style.textDecoration = document.miform.stylillo.value}
+
+            document.getElementById('uno').style.textDecoration = document.miform.subrayados.value;
+
+
+            document.getElementById('code').innerHTML = "&lt;style='font-family:"+document.miform.fuentecilla.value+"; color: "+document.miform.colores.value +"; font-size:"
+            +document.miform.tamañinchi.value+"pt; font-weigth:"+document.miform.grueso.value+"; font-style:"+document.miform.stylillo.value+ "; text-decoration:"
+            +document.miform.subrayados.value+"'&gt;"
+
+
+        }
+
+        function copiarCodigo(){
+        
+            var codigoACopiar = document.getElementById('code');
+            var seleccion = document.createRange();
+            seleccion.selectNodeContents(codigoACopiar);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(seleccion);
+            var res = document.execCommand('copy');
+            window.getSelection().removeRange(seleccion);
+            alert("Código copiado correctamente")
+               
         }
 
 
@@ -41,13 +58,18 @@
             <div class="nombre"> Fuente </div>
             <select name="fuentecilla" onchange="pasarEstilo(this.value)">
                 <option value="Arial"> Arial </option>
+                <option value="Helvetica"> Helvetica</option>
                 <option value="Verdana"> Verdana </option>
+                <option value="Calibri"> Calibri </option>
                 <option value="Courier" > Courier </option>
                 <option value="Fantasy"> Fantasy </option>
                 <option value="Comic Sans MS"> Comic Sans</option>
                 <option value="Georgia"> Georgia </option>
                 <option value="Book Antiqua"> Book Antiqua </option>
                 <option value="Lucida Console"> Lucida Console </option>
+                <option value="Lucida Sans"> Lucida Sans </option>
+                <option value="Noto"> Noto </option>
+                <option value="Franklin Gothic Medium"> Franklin Gothic Medium</option>
             </select>
         </div>
 
@@ -70,16 +92,43 @@
         <div class="estilo">
             <div class="nombre"> Estilo </div>
             <select name="stylillo" onchange="pasarEstilo(this.value)">
-                <option value="normal"> Por defecto </option>
+                <option value="normal"> Normal</option> 
+                <option value="italic" > Cursiva </option>
+            </select>  
+        </div>
+
+        <div class="gruesos">
+            <div class="nombre"> Negrita </div>
+            <select name="grueso" onchange="pasarEstilo(this.value)">
+                <option value="normal"> Normal</option> 
+                <option value="bold"> Negrita </option>
+                <option value="lighter" > Fina </option>
+                <option value="bolder" > Más negrita </option>
+                <option value="100" > 100 </option>
+                <option value="200" > 200 </option>
+                <option value="300" > 300 </option>
+                <option value="400" > 400 </option>
+                <option value="500" > 500 </option>
+                <option value="600" > 600</option>
+                <option value="700" > 700 </option>
+                <option value="800" > 800 </option>
+                <option value="900" > 900 </option>
+                
+            </select>  
+        </div>
+        
+
+        <div class="subrayado">
+            <div class="nombre"> Subrayado </div>
+            <select name="subrayados" onchange="pasarEstilo(this.value)"> 
+                <option value="none"> Sin subrayar </option>
                 <option value="underline"> Subrayado </option>
                 <option value="underline dotted"> Subrayado puntos </option>
                 <option value="underline wavy"> Subrayado olas </option>
                 <option value="line-through"> Tachado </option>
-                <option value="italic" > Cursiva </option>
-                <option value="bold"> Negrita </option>
-
+                <option value="overline"> Subrayado arriba </option>
+                <option value="underline overline"> Subrayado arriba y abajo </option>
             </select>
-            
         </div>
 
         <div class="texto">
@@ -88,12 +137,16 @@
 
         <br>
 
-        <center> <button type="button" onclick="pasarEstilo()"> Estilo </button> </center>
+        <center> 
+            <button type="button" onclick="pasarEstilo()"> Estilo </button> 
+            <button type="button" onclick="copiarCodigo()"> Copiar Código</button>
+        </center>
 
     </form>
 
         <div>
             <p id="uno"> </p>
+            <p id="code"> </p>
         </div>
 
 
